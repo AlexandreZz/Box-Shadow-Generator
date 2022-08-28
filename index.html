@@ -17,55 +17,75 @@
         <div class="horizontal styleOptions">
           <div class="flex" >
             <label>Horizontal:</label>
-            <input type="number" class="MergeAllNumbersForRange" target="0" step="1" min="-100" max='100' value="8">
+              <input type="number" class="MergeAllNumbersForRange" oninput="checkValueNumber(this)" target="0" step="1" min="-100" max='100' value="8">
           </div> <!-- FLEX -->
+          <input type="range" class="MergeAllRangeForNumber" oninput="checkValueNumber(this)" target="0" step="1" min="-100" max='100' value="8">
           
-          <input type="range" class="MergeAllRangeForNumber" target="0" step="1" min="-100" max='100' value="8">
         </div> <!-- HORIZONTAL -->
       
         <div class="vertical styleOptions">
           <div class="flex" >
             <label>Vertical:</label>
-            <input type="number" class="MergeAllNumbersForRange" target="1" step="1" min="-100" max='100' value="8">
+            <input type="number" class="MergeAllNumbersForRange" oninput="checkValueNumber(this)" target="1" step="1" min="-100" max='100' value="8">
           </div> <!-- FLEX -->
           
-          <input type="range" class="MergeAllRangeForNumber" target="1" step="1" min="-100" max='100' value="8">
+          <input type="range" class="MergeAllRangeForNumber" oninput="checkValueNumber(this)" target="1" step="1" min="-100" max='100' value="8">
         </div> <!-- HORIZONTAL -->
 
         <div class="blur styleOptions">
           <div class="flex" >
             <label>Blur:</label>
-            <input type="number" class="MergeAllNumbersForRange" target="2" step="1" min="-100" max='100' value="24">
+            <input type="number" class="MergeAllNumbersForRange" oninput="checkValueNumber(this)" target="2" step="1" min="0" max='100' value="24">
           </div> <!-- FLEX -->
           
-          <input type="range" class="MergeAllRangeForNumber" target="2" step="1" min="-100" max='100' value="24">
+          <input type="range" class="MergeAllRangeForNumber" oninput="checkValueNumber(this)" target="2" step="1" min="0" max='100' value="24">
         </div> <!-- HORIZONTAL -->
 
         <div class="spread styleOptions">
           <div class="flex" >
             <label>Spread:</label>
-            <input type="number" class="MergeAllNumbersForRange" target="3" step="1" min="-100" max='100' value="0">
+            <input type="number" class="MergeAllNumbersForRange" oninput="checkValueNumber(this)" target="3" step="1" min="-100" max='100' value="0">
           </div> <!-- FLEX -->
           
-          <input type="range" class="MergeAllRangeForNumber" target="3" step="1" min="-100" max='100' value="0">
+          <input type="range" class="MergeAllRangeForNumber" oninput="checkValueNumber(this)" target="3" step="1" min="-100" max='100' value="0">
         </div> <!-- HORIZONTAL -->
 
         <div class="colorInset styleOptions">
-          <p>Color:</p>
-          <input type="color" name="" id="">
-          <p>Inset:</p>
-          <input type="checkbox" name="" id="">
+          
+          <div class="flex">
+            <p>Color:</p>
+            <input type="color" id="colorInput">
+          </div> <!-- FLEX -->
+
+          <div class="flex" style="margin-top:30px;">
+            <p>Inset:</p>
+            <input type="checkbox" id="checkValue" onchange="verificarCheckbox(this)">
+          </div> <!-- FLEX-->
+          
         </div> <!-- COLOR INSET-->
       </div> <!-- OPTIONS -->
 
       <div class="preview">
-        <main class="target"></main>
+        <main class="target" id="targetBoxShadow"></main>
       </div> <!-- PREVIEW -->
-
     </div> <!-- FLEX -->
+
+    <div class="codeCopy">
+      <div class="flex" style="justify-content: space-between;margin-bottom:20px;">
+        <h2>Código CSS:</h2>
+        <button id="copyElement" onclick='copyCodigoCss(this)'>Cópiar</button>
+      </div> <!-- FLEX -->
+      <div class="codeCss">
+        -webkit-box-shadow: 8px 8px 24px 0px rgba (0, 0, 0, 1);<br>
+        -moz-box-shadow: 8px 8px 24px 0px rgba (0, 0, 0, 1);<br>
+        box-shadow: 8px 8px 24px 0px rgba (0, 0, 0, 1);
+      </div> <!-- CODE CSS-->
+    </div> <!-- CODE COPY-->
+    
   </section> <!-- APP -->
   
-  <script src="js/app.js"></script>
+  <script src="js/inputs.js"></script>
+  <script src="js/generator.js"></script>
 
 </body>
 </html>

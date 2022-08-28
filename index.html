@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de box-shadow</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <section class="app">
+    <div class="flex">
+
+      <div class="options">
+        <h1>CSS Box-shadow</h1>
+
+        <div class="horizontal styleOptions">
+          <div class="flex" >
+            <label>Horizontal:</label>
+            <input type="number" class="MergeAllNumbersForRange" target="0" step="1" min="-100" max='100' value="8">
+          </div> <!-- FLEX -->
+          
+          <input type="range" class="MergeAllRangeForNumber" target="0" step="1" min="-100" max='100' value="8">
+        </div> <!-- HORIZONTAL -->
+      
+        <div class="vertical styleOptions">
+          <div class="flex" >
+            <label>Vertical:</label>
+            <input type="number" class="MergeAllNumbersForRange" target="1" step="1" min="-100" max='100' value="8">
+          </div> <!-- FLEX -->
+          
+          <input type="range" class="MergeAllRangeForNumber" target="1" step="1" min="-100" max='100' value="8">
+        </div> <!-- HORIZONTAL -->
+
+        <div class="blur styleOptions">
+          <div class="flex" >
+            <label>Blur:</label>
+            <input type="number" class="MergeAllNumbersForRange" target="2" step="1" min="-100" max='100' value="24">
+          </div> <!-- FLEX -->
+          
+          <input type="range" class="MergeAllRangeForNumber" target="2" step="1" min="-100" max='100' value="24">
+        </div> <!-- HORIZONTAL -->
+
+        <div class="spread styleOptions">
+          <div class="flex" >
+            <label>Spread:</label>
+            <input type="number" class="MergeAllNumbersForRange" target="3" step="1" min="-100" max='100' value="0">
+          </div> <!-- FLEX -->
+          
+          <input type="range" class="MergeAllRangeForNumber" target="3" step="1" min="-100" max='100' value="0">
+        </div> <!-- HORIZONTAL -->
+
+        <div class="colorInset styleOptions">
+          <p>Color:</p>
+          <input type="color" name="" id="">
+          <p>Inset:</p>
+          <input type="checkbox" name="" id="">
+        </div> <!-- COLOR INSET-->
+      </div> <!-- OPTIONS -->
+
+      <div class="preview">
+        <main class="target"></main>
+      </div> <!-- PREVIEW -->
+
+    </div> <!-- FLEX -->
+  </section> <!-- APP -->
+  
+  <script src="js/app.js"></script>
+
+</body>
+</html>

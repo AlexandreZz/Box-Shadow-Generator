@@ -1,0 +1,103 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.flex{
+  display: flex;
+}
+
+section.app{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(230,230,230);
+  padding:40px 5% 0 5%;
+}
+
+div.options{
+  width: 25%;
+  height: auto;
+  background-color: white;
+  padding: 20px 2%;
+  border-radius: 10px;
+  margin-right: 5%;
+}
+
+div.options > h1{
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.styleOptions{
+  padding:8px 0;
+}
+
+.styleOptions span{
+  font-size: 15px;
+}
+
+.styleOptions input[type=number]{
+  width: 60px;
+  border: 0;
+  color:black;
+  font-size:11px;
+  padding:5px 10px;
+  border-radius: 5px;
+  background-color: #ccc;
+}
+
+.styleOptions input[type=number]:focus{outline: none;}
+
+.styleOptions input[type=range]{
+  -webkit-appearance:none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height:3px;
+  background-color: #DEE6FE;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* remove estilo padrão do browser */
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #5983FC;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 3px rgba(89,131,252,0.5);
+}
+
+.styleOptions > .flex{
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+div.preview{
+  width: 70%;
+  height:auto;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+main.target{
+  width: 300px;
+  height:300px;
+  background-color: rgb(230,230,230);
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 878px){
+  section.app > .flex{flex-wrap: wrap;flex-direction: column;}
+  section.app{height: 100%;padding:15px 3%;}
+  div.styleOptions > .flex{padding-bottom: 5px;}
+  div.preview{width: 100%;height: 500px;}
+  div.options{width: 100%;margin:10px 0;}
+}

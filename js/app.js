@@ -8,7 +8,6 @@ for (const horizontalRanges of horizontalRange) {
     horizontalNumber[this.getAttribute("target")].value = this.value;
   });
 }
-
 for (const horizontalNumbers of horizontalNumber) {
   horizontalNumbers.addEventListener("input", function() {
     horizontalRange[this.getAttribute("target")].value = this.value;

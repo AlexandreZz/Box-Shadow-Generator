@@ -17,49 +17,50 @@
         <div class="horizontal styleOptions">
           <div class="flex" >
             <label>Horizontal:</label>
-              <input type="number" class="MergeAllNumbersForRange" oninput="checkValueNumber(this)" target="0" step="1" min="-100" max='100' value="8">
+              <input type="number" class="MergeAllNumbersForRange joinAllFunction"  target="0" step="1" min="-100" max='100' value="8">
           </div> <!-- FLEX -->
-          <input type="range" class="MergeAllRangeForNumber" oninput="checkValueNumber(this)" target="0" step="1" min="-100" max='100' value="8">
+            <input type="range" class="MergeAllRangeForNumber joinAllFunction"  target="0" step="1" min="-100" max='100' value="8">
+          </label>
           
         </div> <!-- HORIZONTAL -->
       
         <div class="vertical styleOptions">
           <div class="flex" >
             <label>Vertical:</label>
-            <input type="number" class="MergeAllNumbersForRange" oninput="checkValueNumber(this)" target="1" step="1" min="-100" max='100' value="8">
+            <input type="number" class="MergeAllNumbersForRange joinAllFunction"  target="1" step="1" min="-100" max='100' value="8">
           </div> <!-- FLEX -->
           
-          <input type="range" class="MergeAllRangeForNumber" oninput="checkValueNumber(this)" target="1" step="1" min="-100" max='100' value="8">
+          <input type="range" class="MergeAllRangeForNumber joinAllFunction"  target="1" step="1" min="-100" max='100' value="8">
         </div> <!-- HORIZONTAL -->
 
         <div class="blur styleOptions">
           <div class="flex" >
             <label>Blur:</label>
-            <input type="number" class="MergeAllNumbersForRange" oninput="checkValueNumber(this)" target="2" step="1" min="0" max='100' value="24">
+            <input type="number" class="MergeAllNumbersForRange joinAllFunction"  target="2" step="1" min="0" max='100' value="24">
           </div> <!-- FLEX -->
           
-          <input type="range" class="MergeAllRangeForNumber" oninput="checkValueNumber(this)" target="2" step="1" min="0" max='100' value="24">
+          <input type="range" class="MergeAllRangeForNumber joinAllFunction"  target="2" step="1" min="0" max='100' value="24">
         </div> <!-- HORIZONTAL -->
 
         <div class="spread styleOptions">
           <div class="flex" >
             <label>Spread:</label>
-            <input type="number" class="MergeAllNumbersForRange" oninput="checkValueNumber(this)" target="3" step="1" min="-100" max='100' value="0">
+            <input type="number" class="MergeAllNumbersForRange joinAllFunction"  target="3" step="1" min="-100" max='100' value="0">
           </div> <!-- FLEX -->
           
-          <input type="range" class="MergeAllRangeForNumber" oninput="checkValueNumber(this)" target="3" step="1" min="-100" max='100' value="0">
+          <input type="range" class="MergeAllRangeForNumber joinAllFunction"  target="3" step="1" min="-100" max='100' value="0">
         </div> <!-- HORIZONTAL -->
 
         <div class="colorInset styleOptions">
           
           <div class="flex">
             <p>Color:</p>
-            <input type="color" id="colorInput">
+            <input class="joinAllFunction" type="color" id="colorInput">
           </div> <!-- FLEX -->
 
           <div class="flex" style="margin-top:30px;">
             <p>Inset:</p>
-            <input type="checkbox" id="checkValue" onchange="verificarCheckbox(this)">
+            <input class="joinAllFunction" type="checkbox" id="checkValue"  >
           </div> <!-- FLEX-->
           
         </div> <!-- COLOR INSET-->
